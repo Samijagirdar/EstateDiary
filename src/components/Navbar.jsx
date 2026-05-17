@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { HiMenuAlt1, HiX, HiOutlineDownload } from "react-icons/hi";
 import { Link } from "react-scroll";
+import logo from "../assets/images/Logo.png";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -51,15 +52,21 @@ const Navbar = () => {
           <div className="flex items-center gap-3">
             <div
               className="
-                w-12 h-12
-                rounded-full
-                bg-white/10
-                backdrop-blur-md
-                flex items-center justify-center
-                border border-white/10
-            "
+              mt-2
+    w-12 h-12
+    rounded-full
+
+  "
             >
-              <span className="text-2xl font-bold">E</span>
+              <img
+                src={logo}
+                alt="Estate Diary Logo"
+                className="
+      w-full
+      h-full
+      object-cover
+    "
+              />
             </div>
             <h1 className="text-2xl font-semibold tracking-wide">
               Estate Diary
