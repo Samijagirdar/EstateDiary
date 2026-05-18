@@ -25,3 +25,6 @@ body {
 
   transition-duration: 300ms;
 }
+::-webkit-scrollbar {
+  display: none;
+}
